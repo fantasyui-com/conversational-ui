@@ -33,17 +33,26 @@ cui.register(`My name is (?<name>[a-z ]+)`, 'i', function(options){
 ```JavaScript
 
 const question = 'what is the answer to the ultimate question of life';
-
+console.log('Q:',question)
 const response = await cui.request(question);
 console.log("A:", response);
 
-
 ```
+
+    Q: what is the answer to the ultimate question of life
+    A: Um, but what is the question?
+
 
 # Execute (Example 2)
 
 ```JavaScript
 
-const response = await cui.request('My name is Slim Shady !!!!');
+const question = 'My name is Slim Shady !!!!';
+console.log('Q:',question)
+const response = await cui.request(question);
+console.log("A:", response);
 
 ```
+
+    Q: My name is Slim Shady !!!!
+    A: Hello Slim Shady how are you
