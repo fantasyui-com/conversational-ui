@@ -59,8 +59,6 @@ console.log("A:", response);
 
 # Execute (Example 3)
 
-Note use of spread operator in handler.
-
 ```JavaScript
 
 cui.register(`My name is (?<name>[a-z ]+)`, 'i', function({name}){
