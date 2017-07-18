@@ -28,7 +28,7 @@ cui.register(`My name is (?<name>[a-z ]+)`, 'i', function(options){
 
 ```
 
-# Execute (Example 1)
+# Example 1
 
 ```JavaScript
 
@@ -43,7 +43,7 @@ console.log("A:", response);
     A: Um, but what is the question?
 
 
-# Execute (Example 2)
+# Example 2
 
 ```JavaScript
 
@@ -57,7 +57,7 @@ console.log("A:", response);
     Q: My name is Slim Shady !!!!
     A: Hello Slim Shady how are you
 
-# Execute (Example 3)
+# Example 3
 
 ```JavaScript
 
@@ -79,3 +79,15 @@ console.log("A:", response);
 
     Q: My name is Slim Shady !!!!
     A: Hello Slim Shady how are you
+
+# Example 4, server.js
+
+```Bash
+
+$> curl "http://localhost:3000/my+name+is+shady"
+Hello shady how are you!
+
+$> curl "http://localhost:3000/i+am+very+well"
+Oh, shady I am glad you are very well
+
+```
