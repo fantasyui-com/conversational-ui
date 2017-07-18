@@ -56,3 +56,28 @@ console.log("A:", response);
 
     Q: My name is Slim Shady !!!!
     A: Hello Slim Shady how are you
+
+# Execute (Example 3)
+
+Note use of spread operator in handler.
+
+```JavaScript
+
+cui.register(`My name is (?<name>[a-z ]+)`, 'i', function({name}){
+  return `Hello ${name} how are you!`;
+});
+
+```
+
+
+```JavaScript
+
+const question = 'My name is Slim Shady !!!!';
+console.log('Q:',question)
+const response = await cui.request(question);
+console.log("A:", response);
+
+```
+
+    Q: My name is Slim Shady !!!!
+    A: Hello Slim Shady how are you
