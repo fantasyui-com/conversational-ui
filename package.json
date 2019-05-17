@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/fantasyui-com/conversational-ui#readme",
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.17.0",
     "xregexp": "^3.2.0"
   }
 }
